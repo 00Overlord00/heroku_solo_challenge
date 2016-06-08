@@ -23,3 +23,9 @@ app.get( '/kelley', function(req, res) {
   res.write( 'Dammit, Jim!');
   res.end();
 });
+
+app.get( 'takei', function(req, res) {
+  res.writeHead(200);
+  res.write( 'En garde!!!' );
+  res.end();
+});
