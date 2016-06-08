@@ -2,7 +2,8 @@ var express = require( 'express' );
 var app = express();
 
 var server = app.listen(process.env.PORT || 8080, function() {
-  console.log('Server listening...');
+  res.write( 'Space: The Final Frontier' );
+  res.end();
 });
 
 app.get( '/nimoy', function(req, res) {
